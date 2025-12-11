@@ -44,3 +44,12 @@
 			<Slider Grid.Column="1" Minimum="1" Maximum="10" Value="5"/>
 			<TextBlock Grid.Column="2" Text="штук"  Margin="5" FontSize="22"/>
 		</Grid>
+		<StackPanel Grid.Row="4" Margin="10">
+			<TextBlock Text="Комментарий" Margin="5" FontSize="22"/>
+			<TextBox MaxLength="200" AcceptsReturn="True" Height="75" FontSize="18"/>
+		</StackPanel>
+
+		<Button Grid.Row="5" VerticalAlignment="Bottom" Content="Оформить заказ"
+            Height="50" FontSize="22" Margin="5"/>
+	</Grid>
+</Window>
