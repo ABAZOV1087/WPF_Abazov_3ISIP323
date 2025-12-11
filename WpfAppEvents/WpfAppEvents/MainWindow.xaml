@@ -1,0 +1,67 @@
+﻿<Window x:Class="WpfAppEvents.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppEvents"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="294" Width="256">
+    <Grid>
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Имя:"/>
+                <TextBox Grid.Column="1" x:Name="NameTextBox" />
+                <Label Content="Телефон:" Grid.Row="1"/>
+                <TextBox Grid.Column="1" Grid.Row="1" x:Name="TelephoneTextBox" PreviewTextInput="TelephoneTextBox_PreviewTextInput"/>
+            </Grid>
+            <StackPanel  HorizontalAlignment="Left" Grid.Row="1" Margin="0,10,0,0">
+                <Label Content="Способ оплаты:"/>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Content="Наличные" />
+                    <RadioButton Content="Карта" Margin="10,0,0,0"/>
+                    <RadioButton Content="Онлайн" Margin="10,0,0,0"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Grid.Row="2" Margin="0,10,0,0">
+                <Label Content="Дополнительно:"/>
+                <CheckBox Content="Подарочная упаковка  (+100Р)" x:Name="GiftCheckBox" Checked="GiftCheckBox_Checked" Unchecked="GiftCheckBox_Checked"/>
+                <CheckBox Content="Срочная доставка  (+200Р)" x:Name="FastCheckBox" Checked="FastCheckBox_Checked" Unchecked="FastCheckBox_Checked"/>
+            </StackPanel>
+            <Grid Grid.Row="3" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Количество:" Grid.Column="0"/>
+                <Slider Minimum="0" Maximum="10"  IsSnapToTickEnabled="True"  x:Name="KolvoSlide" ValueChanged="KolvoSlide_ValueChanged" Grid.Column="1"/>
+                <Label Content="0 шт." x:Name="KolvoLabel" Grid.Column="2"/>
+            </Grid>
+            <StackPanel Orientation="Vertical" Grid.Row="4">
+                <Label Content="Итого: " x:Name="Summa"/>
+                
+            </StackPanel>
+            <Button Height="30"  Content="Оформить заказ" Margin="0,10,0,0" Grid.Row="5" VerticalAlignment="Bottom"/>
+
+        </Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="-132,-102,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

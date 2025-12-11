@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Para3WPF", "Para3WPF\Para3WPF.csproj", "{0102F841-507E-4A5F-B8C8-203F87E2F397}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0102F841-507E-4A5F-B8C8-203F87E2F397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0102F841-507E-4A5F-B8C8-203F87E2F397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0102F841-507E-4A5F-B8C8-203F87E2F397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0102F841-507E-4A5F-B8C8-203F87E2F397}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E56F49C5-86A5-4C42-BF47-1AEC3EFD0B48}
+	EndGlobalSection
+EndGlobal
