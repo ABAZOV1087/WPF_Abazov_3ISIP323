@@ -34,4 +34,13 @@
 				<CheckBox Content="Пепперони" Margin="5" FontSize="18"/>
 			</StackPanel>
 		</StackPanel>
-		
+		<Grid Grid.Row="3" Margin="10">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+			<TextBlock Grid.Column="0" Text="Количество:" Margin="5" FontSize="22"/>
+			<Slider Grid.Column="1" Minimum="1" Maximum="10" Value="5"/>
+			<TextBlock Grid.Column="2" Text="штук"  Margin="5" FontSize="22"/>
+		</Grid>
